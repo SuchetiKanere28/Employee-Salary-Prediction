@@ -13,7 +13,6 @@ To develop and deploy a predictive model that classifies income categories using
 ## 📊 Dataset Overview
 
 - **Dataset Name:** Adult Income Dataset
-- **Source:** [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/adult)
 - **Records:** ~32,000
 - **Target Variable:** `income` (`>50K` or `<=50K`)
 - **Features Include:**  
@@ -66,7 +65,7 @@ To develop and deploy a predictive model that classifies income categories using
 | Logistic Regression| 77%      |
 | Random Forest      | 80%      |
 | KNN           | 79%      |
-| svm           | 78%      |
+| SVM           | 78%      |
 | **Gradient Boosting** | **85.7% ✅** |
 
 > Gradient Boosting was selected as the final model due to its superior performance.
