@@ -63,10 +63,10 @@ To develop and deploy a predictive model that classifies income categories using
 
 | Model               | Accuracy   |
 |--------------------|------------|
-| Logistic Regression| 81.6%      |
-| Decision Tree      | 84.0%      |
-| Random Forest      | 84.3%      |
-| AdaBoost           | 85.1%      |
+| Logistic Regression| 77%      |
+| Random Forest      | 80%      |
+| KNN           | 79%      |
+| svm           | 78%      |
 | **Gradient Boosting** | **85.7% ✅** |
 
 > Gradient Boosting was selected as the final model due to its superior performance.
