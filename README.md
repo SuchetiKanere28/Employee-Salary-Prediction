@@ -1,74 +1,81 @@
 # Employee-Salary-Prediction
-# Employee Salary Prediction 🧠💼
 
-This project aims to predict whether an individual earns more than \$50K per year based on demographic and occupational attributes from the UCI Adult Census dataset. The model helps in understanding income patterns and supports HR decisions in salary assessment and workforce planning.
-
-## 🔍 Problem Statement
-
-Develop a machine learning model to classify whether an individual's income exceeds \$50,000 annually. The dataset includes features such as age, gender, education, workclass, occupation, and hours worked per week.
+A data-driven approach to forecast whether an individual's annual income surpasses \$50,000 based on demographic and occupational factors. This project leverages the UCI Adult Census dataset to build a robust classification model that aids HR professionals and analysts in informed salary decision-making.
 
 ---
 
-## 📁 Dataset
+## 📌 Objective
 
-- **Source:** UCI Machine Learning Repository  
-- **File Used:** `adult.csv`  
-- **Target Variable:** `income` (binary: `<=50K` or `>50K`)
+To develop and deploy a predictive model that classifies income categories using historical census data. The system uses machine learning to uncover patterns that distinguish higher-income individuals.
 
 ---
 
-## ⚙️ Technologies Used
+## 📊 Dataset Overview
 
-- **Language:** Python  
-- **Libraries:** Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, Streamlit  
-- **IDE:** Jupyter Notebook
+- **Dataset Name:** Adult Income Dataset
+- **Source:** [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/adult)
+- **Records:** ~32,000
+- **Target Variable:** `income` (`>50K` or `<=50K`)
+- **Features Include:**  
+  Age, Education, Occupation, Workclass, Marital Status, Hours-per-week, and more.
 
 ---
 
-## 🔄 Workflow
+## 🧰 Tools & Technologies
 
-1. **Data Loading**  
-   Load and inspect the dataset for structure and completeness.
+- **Programming Language:** Python  
+- **Libraries:** Pandas, NumPy, Seaborn, Matplotlib, Scikit-learn, Streamlit  
+- **IDE:** Jupyter Notebook  
+- **Deployment:** Streamlit Web App
 
-2. **Data Preprocessing**  
-   - Handle missing values (replace `?` with 'Other')  
-   - Label encode categorical variables  
-   - Detect and remove outliers
+---
+
+## 🧭 Project Pipeline
+
+1. **Data Acquisition**  
+   Load and examine raw census data.
+
+2. **Preprocessing & Cleaning**  
+   - Replace invalid entries (`?`) with meaningful labels  
+   - Encode categorical features  
+   - Detect and eliminate outliers
 
 3. **Exploratory Data Analysis (EDA)**  
-   Visualize distributions and relationships between variables.
+   Visualize trends, distributions, and correlations for data insights.
 
-4. **Model Building**  
-   Train and evaluate multiple classification algorithms:  
+4. **Model Training**  
+   Implement and evaluate multiple classification models:  
    - Logistic Regression  
    - Decision Tree  
    - Random Forest  
    - AdaBoost  
    - Gradient Boosting
 
-5. **Model Evaluation**  
-   Use accuracy, precision, recall, and F1-score for evaluation.
+5. **Model Selection**  
+   Identify the top-performing algorithm based on evaluation metrics.
 
-6. **Model Deployment**  
-   Deploy the best-performing model (Gradient Boosting with 85.7% accuracy) using Streamlit.
-
----
-
-## 📊 Results
-
-| Model              | Accuracy |
-|-------------------|----------|
-| Logistic Regression | 81.6%    |
-| Decision Tree       | 84.0%    |
-| Random Forest       | 84.3%    |
-| AdaBoost            | 85.1%    |
-| **Gradient Boosting** | **85.7%** ✅ |
+6. **Deployment**  
+   Deploy the final model as an interactive web application using Streamlit.
 
 ---
 
-## 🚀 Deployment
+## 🏁 Key Results
 
-Run the Streamlit web app locally:
+| Model               | Accuracy   |
+|--------------------|------------|
+| Logistic Regression| 81.6%      |
+| Decision Tree      | 84.0%      |
+| Random Forest      | 84.3%      |
+| AdaBoost           | 85.1%      |
+| **Gradient Boosting** | **85.7% ✅** |
+
+> Gradient Boosting was selected as the final model due to its superior performance.
+
+---
+
+## 🌐 Web Application
+
+You can launch the app locally using Streamlit:
 
 ```bash
 streamlit run app.py
